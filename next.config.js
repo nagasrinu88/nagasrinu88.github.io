@@ -1,0 +1,6 @@
+module.exports = {
+  // ...existing code...
+  basePath: '/nagasrinu88.github.io',
+  assetPrefix: '/nagasrinu88.github.io/',
+  // ...existing code...
+};
