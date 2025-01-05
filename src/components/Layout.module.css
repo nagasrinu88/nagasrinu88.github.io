@@ -1,0 +1,101 @@
+/* filepath: /c:/Users/nagas/OneDrive/Documents/Projects/nagasrinu88.github.io/src/components/Layout.module.css */
+
+/* Define CSS variables for theme customization */
+.theme {
+    /* Header */
+    --header-bg-color: #1e3a8a;      /* Dark Blue */
+    --header-text-color: white;       /* White text for contrast */
+    --header-padding: 1rem;
+  
+    /* Sidebar */
+    --sidebar-bg-color: #e0f2fe;      /* Light Blue */
+    --sidebar-width: 220px;           /* Slightly wider sidebar */
+    --sidebar-padding: 1rem;
+  
+    /* Main Content */
+    --main-padding: 2rem;
+    --main-width: 900px;              /* Wider content area */
+  
+    /* Footer */
+    --footer-bg-color: #1e3a8a;       /* Same dark blue as header */
+    --footer-text-color: white;       /* White text for consistency */
+    --footer-padding: 1rem;
+  
+    /* Text */
+    --text-color-primary: #1e3a8a;    /* Dark Blue for primary text */
+    --text-color-secondary: #4b5563;  /* Dark gray for secondary text */
+  
+    /* Borders */
+    --border-color: #93c5fd;          /* Light blue for subtle borders */
+  }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.header {
+  background-color: var(--header-bg-color);
+  color: var(--header-text-color);
+  padding: var(--header-padding);
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.stickySidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.sidebar {
+  width: var(--sidebar-width);
+  background-color: var(--sidebar-bg-color);
+  padding: var(--sidebar-padding);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 1rem;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: var(--header-bg-color);
+}
+
+.main {
+  flex: 1;
+  padding: var(--main-padding);
+  max-width: var(--main-width);
+}
+
+.footer {
+  background-color: var(--footer-bg-color);
+  color: var(--footer-text-color);
+  text-align: center;
+  padding: var(--footer-padding);
+}
+
+.roundedImage {
+  border-radius: 50%;
+}
+
+.sectionDivider {
+    border: 'none'; 
+    height: '1px';
+  margin: '20px 0';
+  background: 'linear-gradient(to right, transparent, #1e3a8a, transparent)';
+}
