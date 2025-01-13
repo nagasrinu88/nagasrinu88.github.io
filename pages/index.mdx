@@ -1,0 +1,35 @@
+import Image from 'next/image';
+import styles from '../components/Layout.module.css';
+import Layout from '../components/Layout';
+import Projects from '../sections/projects.mdx';
+import Awards from '../sections/awards.mdx';
+import Skills from '../sections/skills.mdx';
+
+<Layout fullName="Kapusetti Naga Srinivas">
+  <section id="about-me">
+    # About Me
+    Hello, I’m Nagasrinivas, a seasoned **Full Stack Java Architect** with over 14 years of experience in delivering robust and scalable IT solutions. I specialize in architecting and developing enterprise-grade applications using a diverse technology stack, including **Java**, **Spring Boot**, **React**, and **AWS**.
+
+    I hold **2X AWS Certifications** and have hands-on expertise in a wide range of technologies such as **Java**, **Spring Framework**, **Spring Boot**, **JPA**, **JavaScript**, **Node.js**, **Angular**, **React**, **Ionic**, **HTML**, **CSS**, and more. Known as the go-to professional for exploring emerging technologies and rapidly building **Quick Prototypes**, I bring a solution-oriented mindset to every project.
+
+    With a passion for continuous learning and innovation, I stay ahead of the curve by quickly adapting to new tools and methodologies, making me an invaluable asset in dynamic environments.
+
+    <hr className={styles.sectionDivider} />
+  </section>
+
+  <section id="skills">
+    <Skills />
+    <hr className={styles.sectionDivider} />
+  </section>
+
+  <section id="projects">
+    <Projects />
+    <hr className={styles.sectionDivider} />
+  </section>
+
+  <section id="awards">
+    <Awards />
+    <hr className={styles.sectionDivider} />
+  </section>
+
+</Layout>
